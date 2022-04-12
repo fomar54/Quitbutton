@@ -25,18 +25,10 @@ void setup() {
 }//End setup
 //
 void draw()
-
- if(mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight)
- { 
- }
- else {;
-   buttonColour = red;
- }
- buttonColour=blue;//
-  fill(buttonColour);
-  rect ( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight );
-  fill (resetWhite);
-}//End draw
+{
+  quitButtonDraw();
+}
+  ///End draw
 //
 void keyPressed()
 {
@@ -46,6 +38,7 @@ void keyPressed()
 }//End keyPressed
 //
 void mousePressed() {
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) exit();
 }//End mousePressed
 //
 //End Main Program
