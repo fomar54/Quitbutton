@@ -1,5 +1,5 @@
 void quitButtonDraw(){
-/Display Orientation Feedback, works better if feedback to CANVAS
+//Display Orientation Feedback, works better if feedback to CANVAS
   // Will need to rerun the appWidth & appHeight code here
   //(separate void, 2nd reason to create subprograms is "copy and paste lines of code")
   //
